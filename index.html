@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/src/images/icons/favicon.svg" type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="/src/output.css" rel="stylesheet">
+    <title>LaslesVPN</title>
+</head>
+<body class="burger-active min-h-screen">
+
+<header class="page-scroll fixed w-screen top-0 left-0 z-50 min-h-[54px] flex items-center bg-white lg:w-screen
+lg:min-h-[96px]">
+    <div class="w-full max-w-[1080px] mx-auto">
+        <div class="relative z-50 lg:flex lg:justify-between lg:items-center">
+            <div class="min-w-full flex justify-between items-center relative z-50 px-[20px]
+            lg:min-w-0 lg:mr-[13%] lg:px-0">
+                <a href="#" class="w-[153px] hover:opacity-70 active:opacity-50">
+                    <img src="./src/images/icons/logo.svg" alt="" class="max-w-[103px] lg:max-w-[125px]">
+                </a>
+                <div class="burger cursor-pointer h-[20px] w-[20px] relative flex items-center lg:hidden">
+                    <div class="h-[2px] w-full bg-gray-500 rounded-[20px] transition"></div>
+                </div>
+            </div>
+            <div class="links w-full min-h-screen absolute top-0 right-0 z-40 bg-white pt-[40px] flex flex-col items-center
+            justify-center opacity-0 transition duration-300 translate-x-full lg:translate-x-0 lg:opacity-100
+            lg:min-h-full lg:relative lg:p-0 lg:flex-row gap-x-[4%]">
+                <ul class="w-full flex flex-col items-center lg:flex-row lg:gap-x-[9%]">
+                    <li class="link mb-[8px] lg:mb-0"><a
+                            href="#">Features</a>
+                    </li>
+                    <li class="link mb-[8px] lg:mb-0"><a href="#">Pricing</a>
+                    </li>
+                    <li class="link mb-[8px] lg:mb-0"><a
+                            href="#">Testimonial</a>
+                    </li>
+                    <li class="link mb-[8px] lg:mb-0"><a href="#">Help</a>
+                    </li>
+                </ul>
+                <p class="link block mb-2 text-base whitespace-nowrap lg:mb-0">
+                    Sign In
+                </p>
+                <button class="btn min-w-[100px] py-[5px] bg-white text-color border-2 border-color text-[16px]
+                font-regular hover:text-white hover:border-light">
+                    Sign Up
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="pt-[40px]">
+
+    <section class="text-center pt-[20px] pb-[15px] md:text-start md:pt-[124px] sm:pb-[29px]">
+        <div class="w-full max-w-[1180px] mx-auto px-[20px]">
+            <div class="md:flex md:flex-row-reverse md:items-start md:gap-[10px]">
+                <img src="./src/images/main.png" alt=""
+                     class="w-[93%] max-w-[569px] mb-[33px] mx-auto object-contain md:w-1/2">
+                <div class="mb-[27px] md:w-1/2 md:mb-[84px] mt-[20px]">
+                    <h1 class="font-normal mb-[17px] text-[32px] md:text-[50px] md:mb-[50px]">
+                        Want anything to be easy with
+                        <span class="font-semibold">
+                            LaslesVPN
+                        </span>
+                    </h1>
+                    <p class="text-[10px] mb-[31px] sm:text-[16px] md:mb-[52px]">
+                        Lorem ipsum dolor sit amet consectetur. Quis tortor gravida nibh arcu id purus ullamcorper. Vel
+                        vel erat semper augue.
+                    </p>
+                    <button class="btn text-[12px] font-semibold py-[11px] px-[29px] sm:text-18px
+sm:min-w-[196px] sm:py-[15px] sm:text-[18px]">Get started
+                    </button>
+                </div>
+            </div>
+            <ul class="text-start max-w-[825px] mx-auto flex justify-between items-center shadow-lg rounded-[11px]
+              p-[18px] pt-[19px] sm:rounded-[20px] sm:px-[49px] sm:pt-[41px] sm:pb-[36px]">
+                <li class="flex items-center gap-x-[13px] sm:gap-x-[22px]">
+                    <div class="p-[3px] rounded-full bg-color/10 sm:p-[8px]">
+                        <img src="./src/images/icons/user.svg" alt="" class="w-[14px] h-[14px]
+sm:w-[24px] sm:h-[24px]">
+                    </div>
+                    <div class="flex flex-col justify-center gap-y-[4px]">
+                        <span class="text-[11px] font-semibold block sm:text-[20px]">90+</span>
+                        <p class="text-[9px] decoration-lightGray sm:text-[15px] ">Users</p>
+                    </div>
+                </li>
+                <li class="border-sections w-[40%] flex items-center justify-center gap-x-[13px] sm:gap-x-[22px]">
+                    <div class="p-[3px] rounded-full bg-color/10 sm:p-[8px]">
+                        <img src="./src/images/icons/location.svg" alt="" class="w-[14px] h-[14px]
+sm:w-[24px] sm:h-[24px]">
+                    </div>
+                    <div class="flex flex-col justify-center gap-y-[4px]">
+                        <span class="text-[11px] font-semibold block sm:text-[20px]">30+</span>
+                        <p class="text-[9px] decoration-lightGray sm:text-[15px] ">Locations</p>
+                    </div>
+                </li>
+                <li class="flex items-center gap-x-[13px] sm:gap-x-[22px]">
+                    <div class="p-[3px] rounded-full bg-color/10 sm:p-[8px]">
+                        <img src="./src/images/icons/servers.svg" alt="" class="w-[14px] h-[14px]
+sm:w-[24px] sm:h-[24px]">
+                    </div>
+                    <div class="flex flex-col justify-center gap-y-[4px]">
+                        <span class="text-[11px] font-semibold block sm:text-[20px]">50+</span>
+                        <p class="text-[9px] decoration-lightGray sm:text-[15px] ">Servers</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="pt-[15px] pb-[13px] sm:pt-[29px] sm:pb-[38px]">
+        <div class="w-full max-w-[1140px] mx-auto px-[20px]">
+            <div class="md:flex md:flex-row md:justify-between gap-[10px]">
+                <img src="./src/images/provide.png" alt=""
+                     class="w-[81%] max-w-[510px] mb-[31px] mx-auto object-contain md:w-1/2 md:m-0 lg:w-[81%]">
+                <div class="w-[79%] mx-auto md:w-1/2 md:mx-0 md:pt-[41px] lg:w-[37%]">
+                    <h2 class="mb-[10px] text-[19px] sm:mb-[16px] sm:text-[30px]">
+                        We provide many features you can use
+                    </h2>
+                    <p class="mb-[20px] sm:mb-[30px]">
+                        Lorem ipsum dolor sit amet consectetur. Quis tortor gravida nibh arcu id purus ullamcorper. Vel
+                        vel erat semper augue.
+                    </p>
+                    <ul class="ready-list ml-[25px] md:ml-[37px]">
+                        <li class="font-semibold text-[10px] mb-[18px] sm:text-[16px] sm:mb-[26px]">
+                            Powerfull online protection.
+                        </li>
+                        <li class="font-semibold text-[10px] mb-[18px] sm:text-[16px] sm:mb-[26px]">
+                            Internet with borders
+                        </li>
+                        <li class="font-semibold text-[10px] mb-[18px] sm:text-[16px] sm:mb-[26px]">
+                            Supercharged VPN
+                        </li>
+                        <li class="font-semibold text-[10px] mb-[18px] sm:text-[16px] sm:mb-[26px]">
+                            No specific time limits
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-[13px] pb-[25px] md: text-center overflow-hidden md:pt-[38px] md:pb-[46px]">
+        <div class="w-full max-w-[1100px] mx-auto px-[20px]">
+            <h2 class="text-[18px] mb-[10px] md:text-[30px] md:mb-[15px]">
+                Choose your plan
+            </h2>
+            <p class="max-w-[76%] mb-[28px] mx-auto md:max-w-[54%] md:mb-[60px]">
+                Lorem ipsum dolor sit amet consectetur. Quis tortor gravida nibh arcu id purus ullamcorper. Vel vel
+                erat semper augue.
+            </p>
+        </div>
+        <div>
+            <ul class="overflow-auto flex gap-x-[4%] justify-center md:gap-x-[27px]">
+                <li class="min-w-[173px] px-[20px] pt-[10px] pb-[11px] border-light border-[2px]
+            flex flex-col items-center rounded-[11px] hover:border-color md:rounded-[20px]
+md:min-w-[319px] md:pt-[23px] md:pb-[19px]">
+                    <img src="./src/images/plan.png" alt="" class="object-contain w-[80px] mb-[22px]
+                mx-auto md:w-[142px] md:mb-[40px]">
+                    <h4 class="text-[11px] mb-[31px] md:text-[20px] md:mb-[59px]">Standard plan</h4>
+                    <ul class="ready-list list-plans text-start">
+                        <li>
+                            Unlimited bandwitch
+                        </li>
+                        <li>
+                            Encrypted connection
+                        </li>
+                        <li>
+                            Yes trafic logs
+                        </li>
+                    </ul>
+                    <h3 class="text-[15px] mt-auto mb-[12px] md:text-[28px] md:mb-[21px]">Free</h3>
+                    <button class="btn">
+                        Select
+                    </button>
+                </li>
+                <li class="min-w-[173px] px-[20px] pt-[10px] pb-[11px] border-light border-[2px]
+            flex flex-col items-center rounded-[11px] hover:border-color md:rounded-[20px]
+md:min-w-[319px] md:pt-[23px] md:pb-[19px]">
+                    <img src="./src/images/plan.png" alt="" class="object-contain w-[80px] mb-[22px]
+                mx-auto md:w-[142px] md:mb-[40px]">
+                    <h4 class="text-[11px] mb-[31px] md:text-[20px] md:mb-[59px]">Standard plan</h4>
+                    <ul class="ready-list list-plans text-start">
+                        <li>
+                            Unlimited bandwitch
+                        </li>
+                        <li>
+                            Encrypted connection
+                        </li>
+                        <li>
+                            Yes trafic logs
+                        </li>
+                        <li>
+                            Works on all devices
+                        </li>
+                        <li>
+                            Connect anyware
+                        </li>
+                    </ul>
+                    <h3 class="text-[15px] mt-auto mb-[12px] md:text-[28px] md:mb-[21px]">$ 9 /<span
+                            class="text-light text-[11px] md:text-[20px]">mc</span></h3>
+                    <button class="btn">
+                        Select
+                    </button>
+                </li>
+                <li class="min-w-[173px] px-[20px] pt-[10px] pb-[11px] border-light border-[2px]
+            flex flex-col items-center rounded-[11px] hover:border-color md:rounded-[20px]
+md:min-w-[319px] md:pt-[23px] md:pb-[19px]">
+                    <img src="./src/images/plan.png" alt="" class="object-contain w-[80px] mb-[22px]
+                mx-auto md:w-[142px] md:mb-[40px]">
+                    <h4 class="text-[11px] mb-[31px] md:text-[20px] md:mb-[59px]">Standard plan</h4>
+                    <ul class="ready-list list-plans text-start">
+                        <li>
+                            Unlimited bandwitch
+                        </li>
+                        <li>
+                            Encrypted connection
+                        </li>
+                        <li>
+                            Yes trafic logs
+                        </li>
+                        <li>
+                            Works on all devices
+                        </li>
+                        <li>
+                            Connect anyware
+                        </li>
+                        <li>
+                            Get new features
+                        </li>
+                    </ul>
+                    <h3 class="text-[15px] mt-auto mb-[12px] md:text-[28px] md:mb-[21px]">$ 12 /<span
+                            class="text-light text-[11px] md:text-[20px]">mc</span></h3>
+                    <button class="btn">
+                        Select
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section class="pt-[25px] pb-[26px] sm:py-[30px] text-center sm:pt-[46px] sm:pb-[4px]">
+        <div class="w-full max-w-[1175px] mx-auto px-[20px]">
+            <h2 class="w-[57%] text-[17px] mb-[10px] mx-auto sm:w-[26%] sm:text-[25px] sm:mb-[14px]">
+                Huge global network of fast VPN
+            </h2>
+            <p class="w-[89%] text-[11px] mb-[35px] mx-auto sm:w-[54%] sm:text-[16px] sm:mb-[82px]">
+                Lorem ipsum dolor sit amet consectetur. Quis tortor gravida nibh arcu id purus ullamcorper. Vel vel
+                erat semper augue.
+            </p>
+            <img src="./src/images/map.png" alt="" class="w-[94%] mx-auto mb-[40px] sm:mb-[30px]">
+            <img src="./src/images/logos.png" alt="">
+        </div>
+    </section>
+
+    <section class="pt-[25px] pb-[30px] sm:pt-[4px] sm:pb-[45px]">
+        <div class="w-full max-w-[1290px] mx-auto px-[20px]">
+            <h2 class="w-[76%] text-center text-[17px] mx-auto mb-[10px] sm:w-[36%] sm:text-[30px]
+            sm:mb-[16px]">
+                Trusted by thousands of happy customer
+            </h2>
+            <p class="w-[87%] text-center text-[9px] mb-[58px] mx-auto sm:w-[53%] sm:text-[16px]
+sm:mb-[51px]">
+                Lorem ipsum dolor sit amet consectetur. Quis tortor gravida nibh arcu id purus ullamcorper. Vel vel erat
+                semper augue.
+            </p>
+        </div>
+        <div class="swiper swiper-comments pb-[49px] px-[20px] sm:pb-[69px] sm:px-[95px]">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="mb-[17px] relative pl-[58px] sm:pl-[103px] sm:mb-[31px]">
+                        <img src="./src/images/Brooklyn.png" alt="" class="w-[41px] absolute
+top-[-6px] left-[2px] z-10 sm:w-[63px] sm:top-[-10px] sm:left-[3px">
+                        <div>
+                            <h3 class="text-[12px] mb-[4px] sm:text-[18px]">
+                                Brooklyn Simmons
+                            </h3>
+                            <div class="flex justify-between items-center text-[10px] text-light
+sm:text-[15px]">
+                                Warsaw,pland
+                                <div class="flex items-start gap-x-[7px] mr-[5px]">
+                                    <p class="text-[10px] font-medium">4.5</p>
+                                    <img src="./src/images/icons/star.svg" alt="" class="w-[10px]">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-[10px] sm:text-[16px]">
+                        “wow...iam very happy to use this vpn,it turned out to be more than my expectations and so
+                        far there have been no problems. laslesvpn always the best”.
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="mb-[17px] relative pl-[58px] sm:pl-[103px] sm:mb-[31px]">
+                        <img src="./src/images/Brooklyn.png" alt="" class="w-[41px] absolute
+top-[-6px] left-[2px] z-10 sm:w-[63px] sm:top-[-10px] sm:left-[3px">
+                        <div>
+                            <h3 class="text-[12px] mb-[4px] sm:text-[18px]">
+                                Brooklyn Simmons
+                            </h3>
+                            <div class="flex justify-between items-center text-[10px] text-light
+sm:text-[15px]">
+                                Warsaw,pland
+                                <div class="flex items-start gap-x-[7px] mr-[5px]">
+                                    <p class="text-[10px] font-medium">4.5</p>
+                                    <img src="./src/images/icons/star.svg" alt="" class="w-[10px]">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-[10px] sm:text-[16px]">
+                        “wow...iam very happy to use this vpn,it turned out to be more than my expectations and so
+                        far there have been no problems. laslesvpn always the best”.
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="mb-[17px] relative pl-[58px] sm:pl-[103px] sm:mb-[31px]">
+                        <img src="./src/images/Brooklyn.png" alt="" class="w-[41px] absolute
+top-[-6px] left-[2px] z-10 sm:w-[63px] sm:top-[-10px] sm:left-[3px">
+                        <div>
+                            <h3 class="text-[12px] mb-[4px] sm:text-[18px]">
+                                Brooklyn Simmons
+                            </h3>
+                            <div class="flex justify-between items-center text-[10px] text-light
+sm:text-[15px]">
+                                Warsaw,pland
+                                <div class="flex items-start gap-x-[7px] mr-[5px]">
+                                    <p class="text-[10px] font-medium">4.5</p>
+                                    <img src="./src/images/icons/star.svg" alt="" class="w-[10px]">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-[10px] sm:text-[16px]">
+                        “wow...iam very happy to use this vpn,it turned out to be more than my expectations and so
+                        far there have been no problems. laslesvpn always the best”.
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="mb-[17px] relative pl-[58px] sm:pl-[103px] sm:mb-[31px]">
+                        <img src="./src/images/Brooklyn.png" alt="" class="w-[41px] absolute
+top-[-6px] left-[2px] z-10 sm:w-[63px] sm:top-[-10px] sm:left-[3px">
+                        <div>
+                            <h3 class="text-[12px] mb-[4px] sm:text-[18px]">
+                                Brooklyn Simmons
+                            </h3>
+                            <div class="flex justify-between items-center text-[10px] text-light
+sm:text-[15px]">
+                                Warsaw,pland
+                                <div class="flex items-start gap-x-[7px] mr-[5px]">
+                                    <p class="text-[10px] font-medium">4.5</p>
+                                    <img src="./src/images/icons/star.svg" alt="" class="w-[10px]">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-[10px] sm:text-[16px]">
+                        “wow...iam very happy to use this vpn,it turned out to be more than my expectations and so
+                        far there have been no problems. laslesvpn always the best”.
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="mb-[17px] relative pl-[58px] sm:pl-[103px] sm:mb-[31px]">
+                        <img src="./src/images/Brooklyn.png" alt="" class="w-[41px] absolute
+top-[-6px] left-[2px] z-10 sm:w-[63px] sm:top-[-10px] sm:left-[3px">
+                        <div>
+                            <h3 class="text-[12px] mb-[4px] sm:text-[18px]">
+                                Brooklyn Simmons
+                            </h3>
+                            <div class="flex justify-between items-center text-[10px] text-light
+sm:text-[15px]">
+                                Warsaw,pland
+                                <div class="flex items-start gap-x-[7px] mr-[5px]">
+                                    <p class="text-[10px] font-medium">4.5</p>
+                                    <img src="./src/images/icons/star.svg" alt="" class="w-[10px]">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-[10px] sm:text-[16px]">
+                        “wow...iam very happy to use this vpn,it turned out to be more than my expectations and so
+                        far there have been no problems. laslesvpn always the best”.
+                    </p>
+                </div>
+            </div>
+            <div class="swiper-pagination text-start"></div>
+            <div class="swiper-button swiper-button-prev"></div>
+            <div class="swiper-button swiper-button-next"></div>
+        </div>
+    </section>
+
+    <section class="subscribe pt-[30px] pb-[30px] text-center md:pt-[45px] md:text-start md:pb-0">
+        <div class="w-full max-w-[1188px] mx-auto px-[20px]">
+            <div class='content relative pt-[48px] pb-[46px] md:pt-[45px] md:pb-[19px]'>
+                <div class=" relative z-10 md:flex md:justify-between md:items-center">
+                    <div>
+                        <h2 class="w-[79%] text-[25px] mx-auto mb-[16px] md:w-[48%] md:text-[25px]
+md:mx-[39px]">
+                            Subscribe now for get special features!
+                        </h2>
+                        <p class="w-[87%] text-[16px] mb-[64px] mx-auto md:text-[16px] md:mb-0">
+                            Lorem ipsum dolor sit amet
+                        </p>
+                    </div>
+                    <button class="btn min-w-[244px] mx-auto py-[17px] rounded-[20px] text-[18px] font-semibold
+md:inline-flex md:mx-[41px]">
+                        Subscribe now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="bg-[#F4F4F4] pt-[32px] pb-[40px] sm:pt-[64px]">
+    <div class="w-full max-w-[1010px] mx-auto px-[20px]">
+        <div class="flex flex-col gap-y-[33px] sm:flex-row-reverse justify-between">
+            <div class="w-full flex justify-between sm:w-3/6">
+                <ul class="footer-list">
+                    <li>Product</li>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Server</a></li>
+                    <li><a href="#">Countries</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <li>Engage</li>
+                    <li><a href="#">LaslesVPN</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Terms of service</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <li>Earn money</li>
+                    <li><a href="#">Become partner</a></li>
+                    <li><a href="#">Affilite</a></li>
+                </ul>
+            </div>
+            <div class="w-full text-center sm:w-2/6 sm:text-start sm:flex sm:flex-col justify-center">
+                <img src="./src/images/icons/logo.svg" alt="" class="w-[125px] mb-[22px] mx-auto
+sm:mx-0">
+                <p class="max-w-[500px] text-[16px] mb-[30px] mx-auto">
+                    Lorem ipsum dolor sit amet consectetur. Quis tortor gravida nibh arcu id purus ullamcorper. Vel vel
+                    erat semper augue.
+                </p>
+                <div class="flex gap-x-[21px] items-center justify-center sm:justify-start">
+                    <a href="https://www.facebook.com"
+                       class="rounded-full bg-color/10 p-[8px] hover:rotate-[45deg] active:opacity-50">
+                        <img src="./src/images/icons/facebook.svg" alt="" class="w-[20px]">
+                    </a>
+                    <a href="https://www.viber.com"
+                       class="rounded-full bg-color/10 p-[8px] hover:rotate-[45deg] active:opacity-50">
+                        <img src="./src/images/icons/viber.svg" alt="" class="w-[20px]">
+                    </a>
+                    <a href="https://www.youtube.com"
+                       class="rounded-full bg-color/10 p-[8px] hover:rotate-[45deg] active:opacity-50">
+                        <img src="./src/images/icons/youtube.svg" alt="" class="w-[20px]">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./src/js/index.js"></script>
+</body>
+</html>

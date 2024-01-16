@@ -1,4 +1,6 @@
 ## Getting Started
 
 ```bash
-npx tailwindcss -i ./src/input.css -o ./src/output.css --watch 
+yarn run start
+# or
+npm run start

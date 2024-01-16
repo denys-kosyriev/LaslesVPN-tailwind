@@ -1,0 +1,14 @@
+{
+  "name": "LaslesVPN",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "tailwindcss build -i src/input.css -o src/output.css --minify --watch"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {}
+}
