@@ -44,23 +44,19 @@
         @apply cursor-pointer transition-all duration-300 ease-linear;
     }
 
-    body.burger-active {
-        @apply overflow-hidden;
-    }
-
-    body.burger-active header .burger div {
+    header.burger-active .burger div {
         @apply opacity-0;
     }
 
-    body.burger-active header .burger::before {
+    header.burger-active .burger::before {
         @apply rotate-[45deg] translate-y-[15%];
     }
 
-    body.burger-active header .burger::after {
+    header.burger-active .burger::after {
         @apply rotate-[-45deg] translate-y-[-15%];
     }
 
-    body.burger-active header .links {
+    header.burger-active .links {
         @apply translate-x-[0] opacity-100;
     }
 
@@ -71,6 +67,19 @@
     header.page-scroll {
         @apply lg:min-h-[60px];
         box-shadow: 0 0 10px #9ca3af;
+    }
+
+    form {
+        @apply flex flex-col items-center;
+    }
+
+    label {
+        @apply w-full block mb-[20px];
+    }
+
+    input {
+        @apply w-full h-[50px] border-[2px] border-light rounded-[40px] text-[18px] px-[20px]
+        text-dark dark:text-dark;
     }
 
     .burger::after, .burger::before {
@@ -243,7 +252,7 @@
         @apply text-color;
     }
 
-    .footer-list li:first-child{
+    .footer-list li:first-child {
         @apply text-[15px] text-dark font-semibold;
     }
 
