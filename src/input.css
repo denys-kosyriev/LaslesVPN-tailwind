@@ -79,7 +79,19 @@
 
     input {
         @apply w-full h-[50px] border-[2px] border-light rounded-[40px] text-[18px] px-[20px]
-        text-dark dark:text-dark;
+        text-dark dark:text-dark hover:border-color focus:border-color;
+    }
+
+    .modal-icon-close path {
+        @apply transition-all duration-300 ease-linear;
+    }
+
+    .modal-icon-close:hover path {
+        @apply fill-color;
+    }
+
+    .modal-icon-close:active path {
+        @apply opacity-50;
     }
 
     .burger::after, .burger::before {
@@ -116,7 +128,7 @@
 
     ul.ready-list li::before {
         @apply content-[''] w-[24px] h-[24px] absolute left-[-20px] top-[50%] z-10 translate-y-[-50%]
-        bg-no-repeat bg-[url('./images/icons/ready.svg')];
+        bg-no-repeat bg-[url('./images/icons/star.svg')];
     }
 
     .boxShadow {
