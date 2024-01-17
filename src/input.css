@@ -5,7 +5,7 @@
 @layer base {
 
     * {
-        @apply font-serif text-dark leading-[1.2] outline-none m-0 p-0;
+        @apply font-serif text-dark leading-[1.2] outline-none m-0 p-0 dark:text-white;
     }
 
     h1, h2, h3, h4 {
@@ -17,7 +17,11 @@
     }
 
     p {
-        @apply text-light text-[10px] sm:text-[15px];
+        @apply text-light text-[10px] dark:text-light sm:text-[15px];
+    }
+
+    p.subTitle {
+        @apply dark:text-darkThemeLight;
     }
 
     .link {
@@ -129,7 +133,8 @@
 
     .swiper-comments .swiper-slide {
         @apply max-w-[258px] border-light border-[1px] rounded-[13px] hover:border-color
-        p-[20px] pb-[13px] transition sm:max-w-[404px] sm:pt-[29px] sm:px-[37px] sm:pb-[19px];
+        p-[20px] pb-[13px] bg-white transition-all duration-300 ease-linear sm:max-w-[404px] sm:pt-[29px]
+        sm:px-[37px] sm:pb-[19px];
     }
 
     .swiper-comments .swiper-button {
@@ -191,7 +196,8 @@
     }
 
     .swiper-comments .swiper-pagination-bullet {
-        @apply cursor-pointer sm:w-[11px] sm:h-[11px] mr-[6px] transition-all duration-300 ease-linear;
+        @apply cursor-pointer mr-[6px] transition-all duration-300
+        ease-linear dark:bg-white opacity-30 sm:w-[11px] sm:h-[11px];
     }
 
     .swiper-comments .swiper-pagination-bullet:first-child {
@@ -199,7 +205,7 @@
     }
 
     .swiper-comments .swiper-pagination-bullet:hover {
-        @apply bg-color;
+        @apply bg-color opacity-50;
     }
 
     .swiper-comments .swiper-pagination-bullet:active {
@@ -207,7 +213,7 @@
     }
 
     .swiper-comments .swiper-pagination-bullet-active {
-        @apply w-[36px] rounded-[13px] bg-color sm:w-[55px] sm:h-[11px];
+        @apply w-[36px] rounded-[13px] bg-color opacity-100 dark:bg-color sm:w-[55px] sm:h-[11px];
     }
 
     .subscribe .content::before {
@@ -226,14 +232,18 @@
     }
 
     .footer-list li {
-        @apply text-[14px] text-light mb-[14px] cursor-pointer transition sm:text-[15px] md:mb-[18px];
+        @apply mb-[14px] md:mb-[18px];
     }
 
-    .footer-list li:hover {
+    .footer-list li a {
+        @apply text-[14px] text-light transition-all duration-300 ease-linear sm:text-[15px];
+    }
+
+    .footer-list li a:hover {
         @apply text-color;
     }
 
-    .footer-list li:first-child {
+    .footer-list li:first-child{
         @apply text-[15px] text-dark font-semibold;
     }
 
