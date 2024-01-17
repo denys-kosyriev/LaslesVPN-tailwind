@@ -122,6 +122,10 @@
         @apply opacity-50;
     }
 
+    ul::-webkit-scrollbar {
+        @apply w-0;
+    }
+
     ul.ready-list li {
         @apply relative sm:text-[16px];
     }
