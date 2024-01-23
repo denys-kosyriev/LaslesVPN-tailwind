@@ -10,46 +10,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link href="/src/output.css" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet">
     <title>LaslesVPN</title>
 </head>
 <body class="bg-white dark:bg-slate-900 min-h-screen">
 
-<header class="page-scroll fixed w-screen top-0 left-0 z-50 min-h-[54px] flex items-center bg-white lg:w-screen
-lg:min-h-[96px]">
-    <div class="w-full max-w-[1080px] mx-auto lg:px-[20px]">
+<header class="page-scroll fixed w-screen top-0 left-0 z-50 min-h-[54px] flex items-center bg-white lg:min-h-24">
+    <div class="w-full max-w-[1080px] mx-auto lg:px-xl">
         <div class="relative z-50 lg:flex lg:justify-between lg:items-center">
-            <div class="min-w-full flex justify-between items-center relative z-50 px-[20px]
-            lg:min-w-0 lg:mr-[13%] lg:px-0">
-                <a href="#" class="w-[153px] hover:opacity-70 active:opacity-50">
+            <div class="min-w-full flex justify-between items-center relative z-50 px-5 lg:min-w-0 lg:mr-[11%] lg:px-0">
+                <a href="#" class="hover:opacity-70 active:opacity-50">
                     <img src="./src/images/icons/logo.svg" alt="" class="max-w-[103px] lg:max-w-[125px]">
                 </a>
-                <div class="burger cursor-pointer h-[20px] w-[20px] relative flex items-center lg:hidden">
-                    <div class="h-[2px] w-full bg-gray-500 rounded-[20px] transition"></div>
+                <div class="burger cursor-pointer h-5 w-5 relative flex items-center lg:hidden">
+                    <div class="h-0.5 w-full bg-gray-600 rounded-[20px] transition-all duration-300 ease-linear"></div>
                 </div>
             </div>
-            <div class="links w-full min-h-screen absolute top-0 right-0 z-40 bg-white pt-[40px] flex flex-col items-center
-            justify-center opacity-0 transition duration-300 translate-x-full lg:translate-x-0 lg:opacity-100
-            lg:min-h-full lg:relative lg:p-0 lg:flex-row gap-x-[4%]">
-                <ul class="w-full flex flex-col items-center lg:flex-row lg:gap-x-[9%]">
-                    <li class="mb-[8px] lg:mb-0">
-                        <a href="#" class="link text-dark">Features</a>
+            <div class="links w-full min-h-screen absolute top-0 right-0 z-40 bg-white pt-10 flex flex-col items-center justify-center opacity-0 transition duration-300 translate-x-full lg:translate-x-0 lg:opacity-100 lg:min-h-full lg:relative lg:p-0 lg:flex-row gap-x-[4%]">
+                <ul class="w-full flex flex-col items-center mb-2 lg:flex-row lg:gap-x-[9%] lg:mb-0">
+                    <li class="mb-2 lg:mb-0">
+                        <a href="#" class="link text-dark-gray">Features</a>
                     </li>
-                    <li class="mb-[8px] lg:mb-0">
-                        <a href="#" class="link text-dark">Pricing</a>
+                    <li class="mb-2 lg:mb-0">
+                        <a href="#" class="link text-dark-gray">Pricing</a>
                     </li>
-                    <li class="mb-[8px] lg:mb-0">
-                        <a href="#" class="link text-dark">Testimonial</a>
+                    <li class="mb-2 lg:mb-0">
+                        <a href="#" class="link text-dark-gray">Testimonial</a>
                     </li>
-                    <li class="mb-[8px] lg:mb-0">
-                        <a href="#" class="link text-dark">Help</a>
+                    <li>
+                        <a href="#" class="link text-dark-gray">Help</a>
                     </li>
                 </ul>
                 <p class="sign-in-btn-js link block mb-2 text-base whitespace-nowrap lg:mb-0">
                     Sign In
                 </p>
-                <button class="btn sign-up-btn-js min-w-[100px] py-[5px] bg-white text-color border-2 border-color text-[16px]
-                font-regular hover:text-white hover:border-light">
+                <button class="btn min-w-[108px] sign-up-btn-js min-w-25 py-[5px] bg-white text-primary border-2 border-primary text-base font-regular hover:text-white hover:bg-primary">
                     Sign Up
                 </button>
             </div>
@@ -57,15 +52,14 @@ lg:min-h-[96px]">
     </div>
 </header>
 
-<main class="pt-[40px]">
+<main class="pt-[54px] lg:pt-24">
 
-    <section class="modal-js h-[100vh] w-[100vw] bg-black/40 fixed
-    top-0 left-0 z-50 hidden justify-center items-center overflow-hidden">
-        <div class="w-full max-w-[500px] mx-auto px-[20px]">
-            <div class="modal-content-js max-h-full bg-white px-[30px] pt-[60px] pb-[30px] overflow-auto
-            relative rounded-[20px]">
-                <svg class="modal-icon-close w-[25px] h-[25px] cursor-pointer absolute top-[15px]
-                right-[20px]" width="800px" height="800px hover:fill-color"
+    <section
+            class="modal-js h-screen w-screen bg-black/40 fixed top-0 left-0 z-50 hidden justify-center items-center overflow-hidden">
+        <div class="w-full max-w-[500px] mx-auto px-5">
+            <div class="modal-content-js max-h-full bg-white px-[30px] pt-[60px] pb-[30px] overflow-auto relative rounded-[20px]">
+                <svg class="modal-icon-close w-[25px] h-[25px] cursor-pointer absolute top-[15px] right-5" width="800px"
+                     height="800px hover:fill-primary"
                      viewBox="0 0 24 24"
                      fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z"
@@ -86,13 +80,12 @@ lg:min-h-[96px]">
         </div>
     </section>
 
-    <section class="modal-js h-[100vh] w-[100vw] bg-black/40 fixed
-    top-0 left-0 z-50 hidden justify-center items-center overflow-hidden">
-        <div class="w-full max-w-[500px] mx-auto px-[20px]">
-            <div class="modal-content-js max-h-full bg-white px-[30px] pt-[60px] pb-[30px] overflow-auto
-            relative rounded-[20px]">
-                <svg class="modal-icon-close w-[25px] h-[25px] cursor-pointer absolute top-[15px]
-                right-[20px]" width="800px" height="800px hover:fill-color"
+    <section
+            class="modal-js h-screen w-screen bg-black/40 fixed top-0 left-0 z-50 hidden justify-center items-center overflow-hidden">
+        <div class="w-full max-w-[500px] mx-auto px-5">
+            <div class="modal-content-js max-h-full bg-white px-[30px] pt-[60px] pb-[30px] overflow-auto relative rounded-[20px]">
+                <svg class="modal-icon-close w-[25px] h-[25px] cursor-pointer absolute top-[15px] right-5"
+                     width="800px" height="800px hover:fill-primary"
                      viewBox="0 0 24 24"
                      fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z"
@@ -113,88 +106,83 @@ lg:min-h-[96px]">
         </div>
     </section>
 
-    <section class="text-center pt-[20px] pb-[15px] md:text-start md:pt-[124px] sm:pb-[29px]">
-        <div class="w-full max-w-[1180px] mx-auto px-[20px]">
-            <div class="md:flex md:flex-row-reverse md:items-start md:gap-[10px]">
+    <section class="text-center pt-[7px] pb-[15px] md:text-start md:pt-[70px] sm:pb-[29px]">
+        <div class="w-full max-w-[1180px] mx-auto px-5">
+            <div class="md:flex md:flex-row-reverse md:items-center md:gap-x-2.5 md:mb-[54px]">
                 <img src="./src/images/main.png" alt=""
-                     class="w-[93%] max-w-[569px] mb-[33px] mx-auto object-contain md:w-1/2">
-                <div class="mb-[27px] md:w-1/2 md:mb-[84px] mt-[20px]">
-                    <h1 class="font-normal mb-[17px] text-[32px] md:text-[50px] md:mb-[50px]">
+                     class="w-[93%] max-w-[569px] mb-[33px] mx-auto object-contain md:w-1/2 md:m-0">
+                <div class="mb-[27px] md:w-1/2 md:m-0">
+                    <h1 class="font-normal mb-[17px] text-[32px] md:text-[50px] md:mb-[31px]">
                         Want anything to be easy with
                         <span class="font-semibold">
                             LaslesVPN
                         </span>
                     </h1>
-                    <p class="subTitle text-[10px] mb-[31px] sm:text-[16px] md:mb-[52px]">
+                    <p class="subTitle text-[10px] mb-[31px] sm:text-base md:mb-[53px]">
                         Lorem ipsum dolor sit amet consectetur. Quis tortor gravida nibh arcu id purus ullamcorper. Vel
                         vel erat semper augue.
                     </p>
-                    <button class="btn text-[12px] font-semibold py-[11px] px-[29px] sm:text-18px
-sm:min-w-[196px] sm:py-[15px] sm:text-[18px]">Get started
+                    <button class="btn min-w-[124px] text-xs font-semibold py-[7px] sm:text-lg sm:min-w-[196px] sm:py-3">
+                        Get started
                     </button>
                 </div>
             </div>
-            <ul class="text-start max-w-[825px] mx-auto bg-white flex justify-between
-            items-center shadow-lg rounded-[11px] p-[18px] pt-[19px] sm:rounded-[20px]
-            sm:px-[49px] sm:pt-[41px] sm:pb-[36px]">
+            <ul class="text-start max-w-[825px] mx-auto bg-white flex justify-between items-center shadow-lg rounded-[11px] p-[18px] pt-[19px] sm:rounded-[20px] sm:px-[49px] sm:pt-[41px] sm:pb-9">
                 <li class="flex items-center gap-x-[13px] sm:gap-x-[22px]">
-                    <div class="p-[3px] rounded-full bg-color/10 sm:p-[8px]">
-                        <img src="./src/images/icons/user.svg" alt="" class="w-[14px] h-[14px]
-sm:w-[24px] sm:h-[24px]">
+                    <div class="p-[3px] rounded-full bg-primary/10 sm:p-2">
+                        <img src="./src/images/icons/user.svg" alt="" class="w-3.5 h-3.5 sm:w-1.5 sm:h-1.5">
                     </div>
-                    <div class="flex flex-col justify-center gap-y-[4px]">
-                        <span class="text-[11px] text-dark  font-semibold block sm:text-[20px]">90+</span>
-                        <p class="text-[9px] decoration-lightGray sm:text-[15px] ">Users</p>
+                    <div class="flex flex-col justify-center gap-y">
+                        <span class="text-[11px] text-dark-gray  font-semibold block sm:text-xl">90+</span>
+                        <p class="text-[9px] decoration-light-grayGray sm:text-[15px] ">Users</p>
                     </div>
                 </li>
-                <li class="border-sections w-[40%] flex items-center justify-center gap-x-[13px] sm:gap-x-[22px]">
-                    <div class="p-[3px] rounded-full bg-color/10 sm:p-[8px]">
-                        <img src="./src/images/icons/location.svg" alt="" class="w-[14px] h-[14px]
-sm:w-[24px] sm:h-[24px]">
+                <li class="border-sections w-2/5 flex items-center justify-center gap-x-[13px] sm:gap-x-[22px]">
+                    <div class="p-[3px] rounded-full bg-primary/10 sm:p-2">
+                        <img src="./src/images/icons/location.svg" alt="" class="w-3.5 h-3.5 sm:w-1.5 sm:h-1.5">
                     </div>
-                    <div class="flex flex-col justify-center gap-y-[4px]">
-                        <span class="text-[11px] text-dark  font-semibold block sm:text-[20px]">30+</span>
-                        <p class="text-[9px] decoration-lightGray sm:text-[15px] ">Locations</p>
+                    <div class="flex flex-col justify-center gap-y-1">
+                        <span class="text-[11px] text-dark-gray  font-semibold block sm:text-xl">30+</span>
+                        <p class="text-[9px] decoration-light-grayGray sm:text-[15px] ">Locations</p>
                     </div>
                 </li>
                 <li class="flex items-center gap-x-[13px] sm:gap-x-[22px]">
-                    <div class="p-[3px] rounded-full bg-color/10 sm:p-[8px]">
-                        <img src="./src/images/icons/servers.svg" alt="" class="w-[14px] h-[14px]
-sm:w-[24px] sm:h-[24px]">
+                    <div class="p-[3px] rounded-full bg-primary/10 sm:p-2">
+                        <img src="./src/images/icons/servers.svg" alt="" class="w-3.5 h-3.5 sm:w-1.5 sm:h-1.5">
                     </div>
-                    <div class="flex flex-col justify-center gap-y-[4px]">
-                        <span class="text-[11px] text-dark  font-semibold block sm:text-[20px]">50+</span>
-                        <p class="text-[9px] decoration-lightGray sm:text-[15px] ">Servers</p>
+                    <div class="flex flex-col justify-center gap-y-1">
+                        <span class="text-[11px] text-dark-gray  font-semibold block sm:text-xl">50+</span>
+                        <p class="text-[9px] decoration-light-grayGray sm:text-[15px] ">Servers</p>
                     </div>
                 </li>
             </ul>
         </div>
     </section>
 
-    <section class="pt-[15px] pb-[13px] sm:pt-[29px] sm:pb-[38px]">
-        <div class="w-full max-w-[1140px] mx-auto px-[20px]">
-            <div class="md:flex md:flex-row md:justify-between gap-[10px]">
+    <section class="pt-[15px] pb-6 sm:pt-[29px] sm:pb-[38px]">
+        <div class="w-full max-w-[1140px] mx-auto px-5">
+            <div class="md:flex md:flex-row md:justify-between gap-2.5">
                 <img src="./src/images/provide.png" alt=""
                      class="w-[81%] max-w-[510px] mb-[31px] mx-auto object-contain md:w-1/2 md:m-0 lg:w-[81%]">
                 <div class="w-[79%] mx-auto md:w-1/2 md:mx-0 md:pt-[41px] lg:w-[37%]">
-                    <h2 class="mb-[10px] text-[19px] sm:mb-[16px] sm:text-[30px]">
+                    <h2 class="mb-2.5 text-[19px] sm:mb-4 sm:text-[30px]">
                         We provide many features you can use
                     </h2>
-                    <p class="subTitle mb-[20px] sm:mb-[30px]">
+                    <p class="subTitle mb-[22px] sm:mb-[34px]">
                         Lorem ipsum dolor sit amet consectetur. Quis tortor gravida nibh arcu id purus ullamcorper. Vel
                         vel erat semper augue.
                     </p>
-                    <ul class="ready-list ml-[25px] md:ml-[37px]">
-                        <li class="font-semibold text-[10px] mb-[18px] sm:text-[16px] sm:mb-[26px]">
+                    <ul class="ready-list pl-[25px] md:pl-[37px]">
+                        <li class="font-semibold text-[10px] mb-[17px] sm:text-base sm:mb-[21px]">
                             Powerfull online protection.
                         </li>
-                        <li class="font-semibold text-[10px] mb-[18px] sm:text-[16px] sm:mb-[26px]">
+                        <li class="font-semibold text-[10px] mb-[17px] sm:text-base sm:mb-[21px]">
                             Internet with borders
                         </li>
-                        <li class="font-semibold text-[10px] mb-[18px] sm:text-[16px] sm:mb-[26px]">
+                        <li class="font-semibold text-[10px] mb-[17px] sm:text-base sm:mb-[21px]">
                             Supercharged VPN
                         </li>
-                        <li class="font-semibold text-[10px] mb-[18px] sm:text-[16px] sm:mb-[26px]">
+                        <li class="font-semibold text-[10px] sm:text-base">
                             No specific time limits
                         </li>
                     </ul>
@@ -203,242 +191,229 @@ sm:w-[24px] sm:h-[24px]">
         </div>
     </section>
 
-    <section class="pt-[13px] pb-[25px] md: text-center overflow-hidden md:pt-[38px] md:pb-[46px]">
-        <div class="w-full max-w-[1100px] mx-auto px-[20px]">
-            <h2 class="text-[18px] mb-[10px] md:text-[30px] md:mb-[15px]">
+    <section class="pt-[23px] pb-[25px] md: text-center overflow-hidden md:pt-[38px] md:pb-[46px]">
+        <div class="w-full max-w-[1100px] mx-auto px-5 mb-7 md:mb-[60px]">
+            <h2 class="text-lg mb-2.5 md:text-[30px] md:mb-[15px]">
                 Choose your plan
             </h2>
-            <p class="subTitle max-w-[76%] mb-[28px] mx-auto md:max-w-[54%] md:mb-[60px]">
+            <p class="subTitle max-w-[76%] mx-auto md:max-w-[54%]">
                 Lorem ipsum dolor sit amet consectetur. Quis tortor gravida nibh arcu id purus ullamcorper. Vel vel
                 erat semper augue.
             </p>
         </div>
-            <ul class="max-w-[100vw] overflow-auto inline-flex gap-x-[4%] mx-auto px-[20px] md:gap-x-[27px]">
-                <li class="min-w-[173px] px-[20px] pt-[10px] pb-[11px] border-light border-[2px]
-            flex flex-col items-center transition-all duration-300 ease-linear rounded-[11px]
-            hover:border-color md:rounded-[20px] md:min-w-[319px] md:pt-[23px] md:pb-[19px]">
-                    <img src="./src/images/plan.png" alt="" class="object-contain w-[80px] mb-[22px]
-                mx-auto md:w-[142px] md:mb-[40px]">
-                    <h4 class="text-[11px] mb-[31px] md:text-[20px] md:mb-[59px]">Standard plan</h4>
-                    <ul class="ready-list list-plans text-start">
-                        <li>
-                            Unlimited bandwitch
-                        </li>
-                        <li>
-                            Encrypted connection
-                        </li>
-                        <li>
-                            Yes trafic logs
-                        </li>
-                    </ul>
-                    <h3 class="text-[15px] mt-auto mb-[12px] md:text-[28px] md:mb-[21px]">Free</h3>
-                    <button class="btn">
-                        Select
-                    </button>
-                </li>
-                <li class="min-w-[173px] px-[20px] pt-[10px] pb-[11px] border-light border-[2px]
-            flex flex-col items-center transition-all duration-300 ease-linear rounded-[11px]
-            hover:border-color md:rounded-[20px] md:min-w-[319px] md:pt-[23px] md:pb-[19px]">
-                    <img src="./src/images/plan.png" alt="" class="object-contain w-[80px] mb-[22px]
-                mx-auto md:w-[142px] md:mb-[40px]">
-                    <h4 class="text-[11px] mb-[31px] md:text-[20px] md:mb-[59px]">Standard plan</h4>
-                    <ul class="ready-list list-plans text-start">
-                        <li>
-                            Unlimited bandwitch
-                        </li>
-                        <li>
-                            Encrypted connection
-                        </li>
-                        <li>
-                            Yes trafic logs
-                        </li>
-                        <li>
-                            Works on all devices
-                        </li>
-                        <li>
-                            Connect anyware
-                        </li>
-                    </ul>
-                    <h3 class="text-[15px] mt-auto mb-[12px] md:text-[28px] md:mb-[21px]">$ 9 /<span
-                            class="text-light text-[11px] md:text-[20px]">mc</span></h3>
-                    <button class="btn">
-                        Select
-                    </button>
-                </li>
-                <li class="min-w-[173px] px-[20px] pt-[10px] pb-[11px] border-light border-[2px]
-            flex flex-col items-center transition-all duration-300 ease-linear rounded-[11px]
-            hover:border-color md:rounded-[20px] md:min-w-[319px] md:pt-[23px] md:pb-[19px]">
-                    <img src="./src/images/plan.png" alt="" class="object-contain w-[80px] mb-[22px]
-                mx-auto md:w-[142px] md:mb-[40px]">
-                    <h4 class="text-[11px] mb-[31px] md:text-[20px] md:mb-[59px]">Standard plan</h4>
-                    <ul class="ready-list list-plans text-start">
-                        <li>
-                            Unlimited bandwitch
-                        </li>
-                        <li>
-                            Encrypted connection
-                        </li>
-                        <li>
-                            Yes trafic logs
-                        </li>
-                        <li>
-                            Works on all devices
-                        </li>
-                        <li>
-                            Connect anyware
-                        </li>
-                        <li>
-                            Get new features
-                        </li>
-                    </ul>
-                    <h3 class="text-[15px] mt-auto mb-[12px] md:text-[28px] md:mb-[21px]">$ 12 /<span
-                            class="text-light text-[11px] md:text-[20px]">mc</span></h3>
-                    <button class="btn">
-                        Select
-                    </button>
-                </li>
-            </ul>
+        <ul class="max-w-[100vw] cursor-pointer overflow-x-auto inline-flex gap-x-[4%] mx-auto px-5 md:gap-x-[27px]">
+            <li class="min-w-[173px] px-5 pt-2.5 pb-[9px] border-light-gray border-2 flex flex-col items-center transition-all duration-300 ease-linear rounded-[11px] hover:border-primary md:rounded-[20px] md:min-w-[319px] md:pt-[23px] md:pb-[19px]">
+                <img src="./src/images/plan.png" alt=""
+                     class="object-contain w-20 mb-[22px] mx-auto md:w-[142px] md:mb-10">
+                <h4 class="text-[11px] mb-[31px] md:text-xl md:mb-[59px]">Free</h4>
+                <ul class="ready-list list-plans text-start">
+                    <li>
+                        Unlimited bandwitch
+                    </li>
+                    <li>
+                        Encrypted connection
+                    </li>
+                    <li>
+                        Yes trafic logs
+                    </li>
+                </ul>
+                <h3 class="text-[15px] mt-auto mb-3 md:text-[28px] md:mb-[21px]">Free</h3>
+                <button class="btn">
+                    Select
+                </button>
+            </li>
+            <li class="min-w-[173px] px-5 pt-2.5 pb-[9px] border-light-gray border-2 flex flex-col items-center transition-all duration-300 ease-linear rounded-[11px] hover:border-primary md:rounded-[20px] md:min-w-[319px] md:pt-[23px] md:pb-[19px]">
+                <img src="./src/images/plan.png" alt=""
+                     class="object-contain w-20 mb-[22px] mx-auto md:w-[142px] md:mb-10">
+                <h4 class="text-[11px] mb-[31px] md:text-xl md:mb-[59px]">Standard plan</h4>
+                <ul class="ready-list list-plans text-start">
+                    <li>
+                        Unlimited bandwitch
+                    </li>
+                    <li>
+                        Encrypted connection
+                    </li>
+                    <li>
+                        Yes trafic logs
+                    </li>
+                    <li>
+                        Works on all devices
+                    </li>
+                    <li>
+                        Connect anyware
+                    </li>
+                </ul>
+                <h3 class="text-[15px] mt-auto mb-3 md:text-[28px] md:mb-[21px]">$ 9 /<span
+                        class="text-light-gray text-[11px] md:text-xl">mc</span></h3>
+                <button class="btn">
+                    Select
+                </button>
+            </li>
+            <li class="min-w-[173px] px-5 pt-2.5 pb-[9px] border-light-gray border-2 flex flex-col items-center transition-all duration-300 ease-linear rounded-[11px] hover:border-primary md:rounded-[20px] md:min-w-[319px] md:pt-[23px] md:pb-[19px]">
+                <img src="./src/images/plan.png" alt=""
+                     class="object-contain w-20 mb-[22px] mx-auto md:w-[142px] md:mb-10">
+                <h4 class="text-[11px] mb-[31px] md:text-xl md:mb-[59px]">Premium plan</h4>
+                <ul class="ready-list list-plans text-start">
+                    <li>
+                        Unlimited bandwitch
+                    </li>
+                    <li>
+                        Encrypted connection
+                    </li>
+                    <li>
+                        Yes trafic logs
+                    </li>
+                    <li>
+                        Works on all devices
+                    </li>
+                    <li>
+                        Connect anyware
+                    </li>
+                    <li>
+                        Get new features
+                    </li>
+                </ul>
+                <h3 class="text-[15px] mt-auto mb-3 md:text-[28px] md:mb-[21px]">$ 12 /<span
+                        class="text-light-gray text-[11px] md:text-xl">mc</span></h3>
+                <button class="btn">
+                    Select
+                </button>
+            </li>
+        </ul>
     </section>
 
-    <section class="pt-[25px] pb-[26px] sm:py-[30px] text-center sm:pt-[46px] sm:pb-[4px]">
-        <div class="w-full max-w-[1175px] mx-auto px-[20px]">
-            <h2 class="w-[57%] text-[17px] mb-[10px] mx-auto sm:w-[26%] sm:text-[25px] sm:mb-[14px]">
+    <section class="pt-[25px] pb-[26px] sm:py-[30px] text-center sm:pt-[46px] sm:pb-1">
+        <div class="w-full max-w-[1175px] mx-auto px-5">
+            <h2 class="w-[57%] text-[17px] mb-2.5 mx-auto sm:w-[26%] sm:text-[25px] sm:mb-2">
                 Huge global network of fast VPN
             </h2>
-            <p class="subTitle w-[89%] text-[11px] mb-[35px] mx-auto sm:w-[54%] sm:text-[16px] sm:mb-[82px]">
+            <p class="subTitle w-[89%] text-[11px] mb-[35px] mx-auto sm:w-[54%] sm:text-base sm:mb-[73px]">
                 Lorem ipsum dolor sit amet consectetur. Quis tortor gravida nibh arcu id purus ullamcorper. Vel vel
                 erat semper augue.
             </p>
-            <img src="./src/images/map.png" alt="" class="w-[94%] mx-auto mb-[40px] sm:mb-[30px]">
+            <img src="./src/images/map.png" alt="" class="w-[94%] mx-auto mb-10 sm:mb-[30px]">
             <img src="./src/images/logos.png" alt="">
         </div>
     </section>
 
-    <section class="pt-[25px] pb-[30px] sm:pt-[4px] sm:pb-[45px]">
-        <div class="w-full max-w-[1290px] mx-auto px-[20px]">
-            <h2 class="w-[76%] text-center text-[17px] mx-auto mb-[10px] sm:w-[36%] sm:text-[30px]
-            sm:mb-[16px]">
+    <section class="pt-[25px] pb-[30px] sm:pt-1 sm:pb-[45px]">
+        <div class="w-full max-w-[1290px] mx-auto px-5 mb-[58px] sm:mb-4">
+            <h2 class="w-[76%] text-center text-[17px] mx-auto mb-2.5 sm:w-[36%] sm:text-3xl">
                 Trusted by thousands of happy customer
             </h2>
-            <p class="subTitle w-[87%] text-center text-[9px] mb-[58px] mx-auto sm:w-[53%] sm:text-[16px]
-sm:mb-[51px]">
+            <p class="subTitle w-[87%] text-center text-[9px] mx-auto sm:w-[53%] sm:text-base sm:mb-[51px]">
                 Lorem ipsum dolor sit amet consectetur. Quis tortor gravida nibh arcu id purus ullamcorper. Vel vel erat
                 semper augue.
             </p>
         </div>
-        <div class="swiper swiper-comments pb-[49px] px-[20px] sm:pb-[69px] sm:px-[95px]">
-            <div class="swiper-wrapper">
+        <div class="swiper swiper-comments pb-[47px] px-5 sm:pb-[69px] sm:px-[95px]">
+            <div class="swiper-wrapper cursor-pointer">
                 <div class="swiper-slide">
-                    <div class="mb-[17px] relative pl-[58px] sm:pl-[96px] sm:mb-[31px]">
-                        <img src="./src/images/Brooklyn.png" alt="" class="w-[41px] absolute
-top-[-6px] left-[2px] z-10 sm:w-[63px] sm:top-[-10px] sm:left-[3px">
+                    <div class="mb-[17px] relative pl-[58px] sm:pl-24 sm:mb-[31px]">
+                        <img src="./src/images/Brooklyn.png" alt=""
+                             class="w-[41px] absolute -top-1.5 left-0.5 z-10 sm:w-[63px] sm:-top-2.5 sm:left-[3px]">
                         <div>
-                            <h3 class="text-[12px] text-dark mb-[4px] sm:text-[18px]">
+                            <h3 class="text-xs text-dark-gray mb-1 sm:text-lg">
                                 Brooklyn Simmons
                             </h3>
-                            <div class="flex justify-between items-center text-[10px] text-light
-sm:text-[15px]">
+                            <div class="flex justify-between items-center text-[10px] text-light-gray sm:text-[15px]">
                                 Warsaw,pland
                                 <div class="flex items-start gap-x-[7px] mr-[5px]">
                                     <p class="text-[10px] font-medium sm:text-[15px]">4.5</p>
-                                    <img src="./src/images/icons/star.svg" alt="" class="w-[10px] sm:w-[15px]">
+                                    <img src="./src/images/icons/star.svg" alt="" class="w-2.5 sm:w-[15px]">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <p class="text-[10px] sm:text-[16px]">
+                    <p class="text-[10px] sm:text-base">
                         “wow...iam very happy to use this vpn,it turned out to be more than my expectations and so
                         far there have been no problems. laslesvpn always the best”.
                     </p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="mb-[17px] relative pl-[58px] sm:pl-[96px] sm:mb-[31px]">
-                        <img src="./src/images/Brooklyn.png" alt="" class="w-[41px] absolute
-top-[-6px] left-[2px] z-10 sm:w-[63px] sm:top-[-10px] sm:left-[3px">
+                    <div class="mb-[17px] relative pl-[58px] sm:pl-24 sm:mb-[31px]">
+                        <img src="./src/images/Brooklyn.png" alt=""
+                             class="w-[41px] absolute -top-1.5 left-0.5 z-10 sm:w-[63px] sm:-top-2.5 sm:left-[3px]">
                         <div>
-                            <h3 class="text-[12px] text-dark mb-[4px] sm:text-[18px]">
+                            <h3 class="text-xs text-dark-gray mb-1 sm:text-lg">
                                 Brooklyn Simmons
                             </h3>
-                            <div class="flex justify-between items-center text-[10px] text-light
-sm:text-[15px]">
+                            <div class="flex justify-between items-center text-[10px] text-light-gray sm:text-[15px]">
                                 Warsaw,pland
                                 <div class="flex items-start gap-x-[7px] mr-[5px]">
                                     <p class="text-[10px] font-medium sm:text-[15px]">4.5</p>
-                                    <img src="./src/images/icons/star.svg" alt="" class="w-[10px] sm:w-[15px]">
+                                    <img src="./src/images/icons/star.svg" alt="" class="w-2.5 sm:w-[15px]">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <p class="text-[10px] sm:text-[16px]">
+                    <p class="text-[10px] sm:text-base">
                         “wow...iam very happy to use this vpn,it turned out to be more than my expectations and so
                         far there have been no problems. laslesvpn always the best”.
                     </p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="mb-[17px] relative pl-[58px] sm:pl-[96px] sm:mb-[31px]">
-                        <img src="./src/images/Brooklyn.png" alt="" class="w-[41px] absolute
-top-[-6px] left-[2px] z-10 sm:w-[63px] sm:top-[-10px] sm:left-[3px">
+                    <div class="mb-[17px] relative pl-[58px] sm:pl-24 sm:mb-[31px]">
+                        <img src="./src/images/Brooklyn.png" alt=""
+                             class="w-[41px] absolute -top-1.5 left-0.5 z-10 sm:w-[63px] sm:-top-2.5 sm:left-[3px]">
                         <div>
-                            <h3 class="text-[12px] text-dark mb-[4px] sm:text-[18px]">
+                            <h3 class="text-xs text-dark-gray mb-1 sm:text-lg">
                                 Brooklyn Simmons
                             </h3>
-                            <div class="flex justify-between items-center text-[10px] text-light
-sm:text-[15px]">
+                            <div class="flex justify-between items-center text-[10px] text-light-gray sm:text-[15px]">
                                 Warsaw,pland
                                 <div class="flex items-start gap-x-[7px] mr-[5px]">
                                     <p class="text-[10px] font-medium sm:text-[15px]">4.5</p>
-                                    <img src="./src/images/icons/star.svg" alt="" class="w-[10px] sm:w-[15px]">
+                                    <img src="./src/images/icons/star.svg" alt="" class="w-2.5 sm:w-[15px]">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <p class="text-[10px] sm:text-[16px]">
+                    <p class="text-[10px] sm:text-base">
                         “wow...iam very happy to use this vpn,it turned out to be more than my expectations and so
                         far there have been no problems. laslesvpn always the best”.
                     </p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="mb-[17px] relative pl-[58px] sm:pl-[96px] sm:mb-[31px]">
-                        <img src="./src/images/Brooklyn.png" alt="" class="w-[41px] absolute
-top-[-6px] left-[2px] z-10 sm:w-[63px] sm:top-[-10px] sm:left-[3px">
+                    <div class="mb-[17px] relative pl-[58px] sm:pl-24 sm:mb-[31px]">
+                        <img src="./src/images/Brooklyn.png" alt=""
+                             class="w-[41px] absolute -top-1.5 left-0.5 z-10 sm:w-[63px] sm:-top-2.5 sm:left-[3px]">
                         <div>
-                            <h3 class="text-[12px] text-dark mb-[4px] sm:text-[18px]">
+                            <h3 class="text-xs text-dark-gray mb-1 sm:text-lg">
                                 Brooklyn Simmons
                             </h3>
-                            <div class="flex justify-between items-center text-[10px] text-light
-sm:text-[15px]">
+                            <div class="flex justify-between items-center text-[10px] text-light-gray sm:text-[15px]">
                                 Warsaw,pland
                                 <div class="flex items-start gap-x-[7px] mr-[5px]">
                                     <p class="text-[10px] font-medium sm:text-[15px]">4.5</p>
-                                    <img src="./src/images/icons/star.svg" alt="" class="w-[10px] sm:w-[15px]">
+                                    <img src="./src/images/icons/star.svg" alt="" class="w-2.5 sm:w-[15px]">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <p class="text-[10px] sm:text-[16px]">
+                    <p class="text-[10px] sm:text-base">
                         “wow...iam very happy to use this vpn,it turned out to be more than my expectations and so
                         far there have been no problems. laslesvpn always the best”.
                     </p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="mb-[17px] relative pl-[58px] sm:pl-[96px] sm:mb-[31px]">
-                        <img src="./src/images/Brooklyn.png" alt="" class="w-[41px] absolute
-top-[-6px] left-[2px] z-10 sm:w-[63px] sm:top-[-10px] sm:left-[3px">
+                    <div class="mb-[17px] relative pl-[58px] sm:pl-24 sm:mb-[31px]">
+                        <img src="./src/images/Brooklyn.png" alt=""
+                             class="w-[41px] absolute -top-1.5 left-0.5 z-10 sm:w-[63px] sm:-top-2.5 sm:left-[3px]">
                         <div>
-                            <h3 class="text-[12px] text-dark mb-[4px] sm:text-[18px]">
+                            <h3 class="text-xs text-dark-gray mb-1 sm:text-lg">
                                 Brooklyn Simmons
                             </h3>
-                            <div class="flex justify-between items-center text-[10px] text-light
-sm:text-[15px]">
+                            <div class="flex justify-between items-center text-[10px] text-light-gray sm:text-[15px]">
                                 Warsaw,pland
                                 <div class="flex items-start gap-x-[7px] mr-[5px]">
                                     <p class="text-[10px] font-medium sm:text-[15px]">4.5</p>
-                                    <img src="./src/images/icons/star.svg" alt="" class="w-[10px] sm:w-[15px]">
+                                    <img src="./src/images/icons/star.svg" alt="" class="w-2.5 sm:w-[15px]">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <p class="text-[10px] sm:text-[16px]">
+                    <p class="text-[10px] sm:text-base">
                         “wow...iam very happy to use this vpn,it turned out to be more than my expectations and so
                         far there have been no problems. laslesvpn always the best”.
                     </p>
@@ -451,20 +426,18 @@ sm:text-[15px]">
     </section>
 
     <section class="subscribe pt-[30px] pb-[30px] text-center md:pt-[45px] md:text-start md:pb-0">
-        <div class="w-full max-w-[1188px] mx-auto px-[20px]">
-            <div class='content relative pt-[48px] pb-[46px] md:pt-[45px] md:pb-[19px]'>
+        <div class="w-full max-w-[1188px] mx-auto px-5">
+            <div class='content relative pt-12 pb-[46px] md:pt-[45px] md:pb-[19px]'>
                 <div class=" relative z-10 md:flex md:justify-between md:items-center">
                     <div>
-                        <h2 class="w-[79%] text-[25px] text-dark mx-auto mb-[16px] md:w-[48%]
-                        md:text-[25px] md:mx-[39px]">
+                        <h2 class="w-[79%] text-[25px] text-dark-gray mx-auto mb-3 md:w-[48%] md:text-[25px] md:mx-[39px]">
                             Subscribe now for get special features!
                         </h2>
-                        <p class="subTitle w-[87%] text-[16px] mb-[64px] mx-auto md:text-[16px] md:mb-0">
+                        <p class="subTitle w-[87%] text-base mb-[61px] mx-auto md:text-base md:mb-0">
                             Lorem ipsum dolor sit amet
                         </p>
                     </div>
-                    <button class="btn min-w-[244px] mx-auto py-[17px] rounded-[20px] text-[18px] font-semibold
-md:inline-flex md:mx-[41px]">
+                    <button class="btn min-w-[244px] mx-auto py-[13px] rounded-[20px] text-lg font-semibold md:inline-flex md:mx-[41px]">
                         Subscribe now
                     </button>
                 </div>
@@ -474,9 +447,9 @@ md:inline-flex md:mx-[41px]">
 
 </main>
 
-<footer class="bg-[#F4F4F4] pt-[32px] pb-[40px] sm:pt-[64px]">
-    <div class="w-full max-w-[1010px] mx-auto px-[20px]">
-        <div class="flex flex-col gap-y-[33px] sm:flex-row-reverse justify-between">
+<footer class="bg-[#F4F4F4] pt-8 pb-10 sm:pt-16">
+    <div class="w-full max-w-[1010px] mx-auto px-5">
+        <div class="flex flex-col gap-y-6 sm:flex-row-reverse justify-between">
             <div class="w-full flex justify-between sm:w-3/6">
                 <ul class="footer-list">
                     <li>Product</li>
@@ -503,24 +476,25 @@ md:inline-flex md:mx-[41px]">
                 </ul>
             </div>
             <div class="w-full text-center sm:w-2/6 sm:text-start sm:flex sm:flex-col justify-center">
-                <img src="./src/images/icons/logo.svg" alt="" class="w-[125px] mb-[22px] mx-auto
-sm:mx-0">
-                <p class="max-w-[500px] text-[16px] mb-[30px] mx-auto">
+                <a href="" class="hover:opacity-70 active:opacity-50">
+                    <img src="./src/images/icons/logo.svg" alt="" class="w-[125px] mb-[22px] mx-auto sm:mx-0">
+                </a>
+                <p class="max-w-[500px] text-base mb-[30px] mx-auto">
                     Lorem ipsum dolor sit amet consectetur. Quis tortor gravida nibh arcu id purus ullamcorper. Vel vel
                     erat semper augue.
                 </p>
                 <div class="flex gap-x-[21px] items-center justify-center sm:justify-start">
                     <a href="https://www.facebook.com"
-                       class="rounded-full bg-color/10 p-[8px] hover:rotate-[45deg] active:opacity-50">
-                        <img src="./src/images/icons/facebook.svg" alt="" class="w-[20px]">
+                       class="rounded-full bg-primary/10 p-2 hover:rotate-45 active:opacity-50">
+                        <img src="./src/images/icons/facebook.svg" alt="" class="w-5">
                     </a>
                     <a href="https://www.viber.com"
-                       class="rounded-full bg-color/10 p-[8px] hover:rotate-[45deg] active:opacity-50">
-                        <img src="./src/images/icons/viber.svg" alt="" class="w-[20px]">
+                       class="rounded-full bg-primary/10 p-2 hover:rotate-45 active:opacity-50">
+                        <img src="./src/images/icons/viber.svg" alt="" class="w-5">
                     </a>
                     <a href="https://www.youtube.com"
-                       class="rounded-full bg-color/10 p-[8px] hover:rotate-[45deg] active:opacity-50">
-                        <img src="./src/images/icons/youtube.svg" alt="" class="w-[20px]">
+                       class="rounded-full bg-primary/10 p-2 hover:rotate-45 active:opacity-50">
+                        <img src="./src/images/icons/youtube.svg" alt="" class="w-5">
                     </a>
                 </div>
             </div>

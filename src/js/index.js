@@ -57,7 +57,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const swiper = new Swiper('.swiper-comments', {
         loop: true,
         slidesPerView: "auto",
-        centeredSlides: true,
         spaceBetween: 10,
         pagination: {
             el: '.swiper-pagination',
